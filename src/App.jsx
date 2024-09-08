@@ -7,7 +7,7 @@ const gameIcons = ["🌟", "🍔", "🚐", "🎆", "⚓", "🛟", "🧊", "🍈"
 
 function App() {
   const [pices, setPices] = useState([]);
-  const [flipCount, setFlipCount] = useState(30);
+  const [flipCount, setFlipCount] = useState(40);
   let timeout = useRef();
   const isGameComplete = useMemo(() => {
     if (pices.length > 0 && pices.every((pice) => pice.solved)) {
